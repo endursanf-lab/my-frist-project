@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color:#4285f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #4285f4;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #dcdcdc;
+        }
+
+        @media (max-width: 400px) {
+            input[type="text"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="logo">Google</h1>
+        <input type="text" placeholder="search...">
+        <div class="button">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </div>
+</body>
+
+</html>
