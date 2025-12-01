@@ -1,77 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Clone</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color:#4285f4;
-        }
-
-        .container {
-            text-align: center;
-        }
-
-        .logo {
-            font-size: 48px;
-            font-weight: bold;
-            color: #4285f4;
-        }
-
-        input[type="text"] {
-            width: 300px;
-            padding: 10px;
-            margin-top: 20px;
-            border: 1px solid #dcdcdc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .button {
-            margin-top: 20px;
-        }
-
-        button {
-            padding: 10px 20px;
-            margin: 5px;
-            border: none;
-            border-radius: 5px;
-            background-color: white;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #dcdcdc;
-        }
-
-        @media (max-width: 400px) {
-            input[type="text"] {
-                width: 100%;
-            }
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <h1 class="logo">Google</h1>
-        <input type="text" placeholder="search...">
-        <div class="button">
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
-        </div>
-    </div>
-</body>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio</div>
+                <ul class="nav-links">
 
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Endersen feyisa </h1>
+                <h2>Frontend Developer</h2>
+                <p>I create beautiful, functional websites with clean code and modern design.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hello! I'm Endersen</h3>
+                    <p>I'm a passionate web developer with 1 years of experience. I specialize in front-end development </p>
+                    <p>My expertise includes HTML5, CSS3, JavaScript</p>
+                    <p>When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new web technologies.</p>
+                    <a href="#contact" class="btn" style="margin-top: 20px;">Get In Touch</a>
+                </div>
+                <div class="about-image">
+                    <img src="photo_2025-02-11_16-25-10.jpg"alt Profile" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility, and modern HTML features.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <p>Responsive design, Flexbox, Grid, animations, and CSS frameworks.</p>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>DOM manipulatio and inteactive features.</p>
+                </div>
+              
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="controller.jpg"alt="tv Website" class="project-img">
+                    <div class="project-content">
+                        <h3>tv controller Website</h3>
+                        <p>Fully responsive controller television.</p>
+                        <a href="#" class="btn" style="margin-top: 20px; padding: 8px 20px;">View Project</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images (1).jpg" alt="Tv management" class="project-img">
+                    <div class="project-content">
+                        <h3>tv management</h3>
+                        <p>Drag-and-drop task organizer with user authentication and cloud sync.</p>
+                        <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px;">View Project</a>
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-codepen"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Endursan feyisa All rights reserved.</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Designed and coded with ❤️</p>
+        </div>
+    </footer>
+
+   <script src="script.js"></script>
+</body>
 </html>
